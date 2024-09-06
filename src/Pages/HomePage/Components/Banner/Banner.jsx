@@ -29,7 +29,7 @@ const Banner = () => {
           <h1 className="text-4xl font-bold tracking-tight text-[#023174] sm:text-6xl">
             Hatagi kog mga information na ibutang diri uyy. 
           </h1>
-          <p className="mt-6 text-lg leading-8 text-white">
+          <p className="mt-6 text-lg leading-8">
             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
             lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
             fugiat aliqua.

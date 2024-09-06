@@ -44,7 +44,7 @@ const Header = () => {
           <Link to="/home" className="text-sm font-semibold leading-6 text-gray-900">Home</Link>
           <Link to="/rooms" className="text-sm font-semibold leading-6 text-gray-900">Rooms</Link>
           <Link to="/" className="text-sm font-semibold leading-6 text-gray-900">Other Facilities</Link>
-          <Link to="/" className="text-sm font-semibold leading-6 text-gray-900">About</Link>
+          <Link to="/about" className="text-sm font-semibold leading-6 text-gray-900">About</Link>
           <Link to="/" className="text-sm font-semibold leading-6 text-gray-900">Contact us</Link>
         </div>
       </nav>

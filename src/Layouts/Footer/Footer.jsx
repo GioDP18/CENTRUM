@@ -119,11 +119,11 @@ const Footer = () => {
                 <Typography
                   variant="small"
                   color="white"
-                  className="mb-4 font-bold uppercase opacity-50"
+                  className="mb-4 font-bold uppercase opacity-50 text-center md:text-start"
                 >
                   {title}
                 </Typography>
-                <ul className="space-y-1">
+                <ul className="space-y-1 text-center md:text-start">
                   {links.map((link, key) => (
                     <Typography key={key} as="li" color="white" className="font-normal">
                       <a

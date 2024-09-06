@@ -9,7 +9,7 @@ const router = createBrowserRouter([
         element: <App /> ,
         errorElement: <h1>404 Not Found</h1>,
         children: [
-            { path: 'home', element: <HomePage /> },
+            { path: '', element: <HomePage /> },
             { path: 'about', element: <h1>About</h1> },
         ],
     }

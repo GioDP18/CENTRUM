@@ -1,11 +1,10 @@
 // import React from 'react'
-
-import HomePage from "../../Pages/HomePage/HomePage"
+import { Outlet } from "react-router-dom"
 
 const Body = () => {
   return (
     <div>
-      <HomePage />
+      <Outlet />
     </div>
   )
 }

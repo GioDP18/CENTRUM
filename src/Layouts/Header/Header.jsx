@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -8,7 +9,7 @@ const Header = () => {
       <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">CENTRUM</span>
             <img
               className="h-8 w-auto"
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -40,15 +41,11 @@ const Header = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Product</a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Features</a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Company</a>
-        </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+          <Link to="/home" className="text-sm font-semibold leading-6 text-gray-900">Home</Link>
+          <Link to="/rooms" className="text-sm font-semibold leading-6 text-gray-900">Rooms</Link>
+          <Link to="/" className="text-sm font-semibold leading-6 text-gray-900">Other Facilities</Link>
+          <Link to="/" className="text-sm font-semibold leading-6 text-gray-900">About</Link>
+          <Link to="/" className="text-sm font-semibold leading-6 text-gray-900">Contact us</Link>
         </div>
       </nav>
 
@@ -61,7 +58,7 @@ const Header = () => {
       >
         <div className="flex items-center justify-between">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">CENTRUM</span>
             <img
               className="h-8 w-auto"
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"

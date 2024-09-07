@@ -131,6 +131,7 @@ const FAQ = ({ animateOnce }) => {
                     whileInView={"show"}
                     viewport={{once: animateOnce, amount: 0.7}}
                     key={faq.id}
+                    className="border-t-2"
                 >
                     <Accordion 
                         open={open === faq.id} 
@@ -142,7 +143,7 @@ const FAQ = ({ animateOnce }) => {
                         >
                             {faq.question}
                         </AccordionHeader>
-                        <AccordionBody className="ml-3 md:ml-10">
+                        <AccordionBody className="ml-3 md:ml-10 max-w-[90%]">
                             {faq.answer}
                         </AccordionBody>
                     </Accordion> 

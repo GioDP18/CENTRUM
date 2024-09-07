@@ -120,10 +120,10 @@ const FAQ = ({ animateOnce }) => {
 
   return (
     <div className="mb-20 my-10 px-10">
-        <div className="flex flex-col md:flex-row gap-2 justify-start items-center">
-            <div className="text-[35px] font-bold text-[#3949AB]">Frequently Asked Questions</div>
+        <div className="flex justify-start items-center">
+            <div className="text-[25px] md:text-[35px] font-bold text-[#3949AB]">Frequently Asked Questions</div>
         </div>
-        <div className="px-10 py-5 mx-auto max-w-[1400px]">
+        <div className="md:px-10 md:py-5 mx-auto max-w-[1400px]">
             {faqs.map((faq) => (
                 <motion.div 
                     variants={fadeIn("left", 0.1)}
@@ -132,11 +132,17 @@ const FAQ = ({ animateOnce }) => {
                     viewport={{once: animateOnce, amount: 0.7}}
                     key={faq.id}
                 >
-                    <Accordion open={open === faq.id} icon={<Icon id={faq.id} open={open} />}>
-                        <AccordionHeader onClick={() => handleOpen(faq.id)}>
+                    <Accordion 
+                        open={open === faq.id} 
+                        icon={<Icon id={faq.id} open={open} />}
+                    >
+                        <AccordionHeader 
+                            onClick={() => handleOpen(faq.id)}
+                            className="flex items-start text-start text-base"
+                        >
                             {faq.question}
                         </AccordionHeader>
-                        <AccordionBody className="ml-10">
+                        <AccordionBody className="ml-3 md:ml-10">
                             {faq.answer}
                         </AccordionBody>
                     </Accordion> 

@@ -7,7 +7,12 @@ export default withMT({
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        base: 'var(--font-size)',
+        title: 'var(--font-title)',
+      },
+    },
   },
   plugins: [],
 })

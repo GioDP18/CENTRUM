@@ -2,7 +2,7 @@ import { useState } from 'react'
 import "./Pricing.css";
 
 const Pricing = () => {
-    const [selectedWeek, setSelectedWeek] = useState("WEEKEND")
+    const [selectedWeek, setSelectedWeek] = useState("WEEKDAYS")
 
   return (
     <section className="bg-white dark:bg-gray-900">

@@ -1,10 +1,10 @@
 // import React from 'react'
+import PropTypes from 'prop-types';
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../../../variants'
 
-const Introduction = () => {
-  const animateOnce = true
+const Introduction = ({ animateOnce }) => {
 
   const features = [
       {
@@ -14,12 +14,12 @@ const Introduction = () => {
           icon: CloudArrowUpIcon,
       },
       {
-          name: 'SSL certificates.',
+          name: 'CI/CD Pipelines.',
           description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
           icon: LockClosedIcon,
       },
       {
-          name: 'Database backups.',
+          name: 'Full-Stack Development.',
           description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
           icon: ServerIcon,
       },
@@ -77,5 +77,9 @@ const Introduction = () => {
     </div>
   )
 }
+
+Introduction.propTypes = {
+  animateOnce: PropTypes.bool.isRequired,
+};
 
 export default Introduction
